@@ -1,4 +1,4 @@
-# /users/iosif/rusk
+# 井の頭公園のラスクちゃんはお砂糖とお塩でできている
 
 井の頭公園のラスクちゃんの物語
 
@@ -12,4 +12,3 @@
 - Awesome Vivliostyle <https://github.com/vivliostyle/awesome-vivliostyle#readme>
 - Vivliostyle (GitHub) <https://github.com/vivliostyle>
 - Vivliostyle <https://vivliostyle.org>
-# rusk-novel
