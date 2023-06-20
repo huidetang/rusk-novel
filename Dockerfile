@@ -1,5 +1,5 @@
 FROM node:18-slim
-WORKDIR /app
+WORKDIR .
 
 RUN apt-get update && apt-get install -y \
   git \
@@ -16,5 +16,4 @@ RUN apt-get update && apt-get install -y \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
-COPY package.json .
 RUN npm install
