@@ -1,6 +1,8 @@
 # 井の頭公園のラスクちゃんはお砂糖とお塩でできている
 
-井の頭公園のラスクちゃんの物語
+井の頭公園のラスクちゃんの物語。
+
+![pixiv](https://www.pixiv.net/novel/show.php?id=20084118)
 
 > created by [create-book](https://github.com/vivliostyle/create-book).
 

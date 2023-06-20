@@ -1,5 +1,5 @@
 FROM node:18-slim
-WORKDIR .
+WORKDIR /app
 
 RUN apt-get update && apt-get install -y \
   git \
@@ -16,4 +16,7 @@ RUN apt-get update && apt-get install -y \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
-RUN npm install
+RUN curl -fsSL https://get.pnpm.io/install.sh | sh -
+
+COPY ./package.json /app
+RUN pnpm install

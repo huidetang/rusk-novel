@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "author": "るいざ・しゃーろっと <louisa.vrc@gmail.com>",
   "scripts": {
-    "build:css": "npm run sass user_scss/:dist/styles",
-    "build": "npm run build:css && vivliostyle build --no-sandbox --preflight press-ready-local --preflight-option gray-scale",
+    "build:css": "pnpm run sass user_scss/:dist/styles",
+    "build": "pnpm run build:css && vivliostyle build --no-sandbox --preflight press-ready-local --preflight-option gray-scale",
     "preview": "vivliostyle preview"
   },
   "devDependencies": {
