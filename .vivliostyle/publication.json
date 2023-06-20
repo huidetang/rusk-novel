@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://www.w3.org/ns/pub-context"
+  ],
+  "type": "Book",
+  "conformsTo": "https://github.com/vivliostyle/vivliostyle-cli",
+  "author": "るいざ・しゃーろっと <louisa.vrc@gmail.com>",
+  "inLanguage": "ja",
+  "dateModified": "2023-06-20T05:51:11.337Z",
+  "name": "井の頭公園のラスクちゃんはお砂糖とお塩でできている",
+  "readingOrder": [
+    {
+      "url": "manuscript.html",
+      "name": "井の頭公園のラスクちゃんはお砂糖とお塩でできている"
+    },
+    {
+      "url": "colophon.html",
+      "name": "井の頭公園のラスクちゃんはお砂糖とお塩でできている"
+    }
+  ],
+  "resources": [],
+  "links": [
+    {
+      "rel": "cover",
+      "url": "images/cover.png",
+      "encodingFormat": "image/png",
+      "width": 1033,
+      "height": 1457
+    }
+  ]
+}
