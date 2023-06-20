@@ -12,3 +12,4 @@
 - Awesome Vivliostyle <https://github.com/vivliostyle/awesome-vivliostyle#readme>
 - Vivliostyle (GitHub) <https://github.com/vivliostyle>
 - Vivliostyle <https://vivliostyle.org>
+# rusk-novel
