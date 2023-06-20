@@ -16,6 +16,6 @@ RUN apt-get update && apt-get install -y \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
-COPY book/package.json .
-COPY book/yarn.lock .
+COPY package.json .
+COPY yarn.lock .
 RUN yarn
