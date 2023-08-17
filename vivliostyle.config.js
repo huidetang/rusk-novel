@@ -6,7 +6,8 @@ module.exports = {
   //theme: '@vivliostyle/theme-bunko@^0.5.1', // .css or local dir or npm package. default to undefined.
   theme: 'dist/styles/theme_print.css',
   entry: [
-    'manuscript.md', 
+    'novel.md', 
+    'scrnario.md',
     "colophon.md",
     // `title` is automatically guessed from the file (frontmatter > first heading).
     // {
