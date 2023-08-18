@@ -1,0 +1,25 @@
+name: Vivliostyle build in Docker
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20.x'
+    - name: Install OS Package
+      run: apt-get update && apt-get install -y build-essential libgtk-3.0 libnss3-dev libatk-bridge2.0-0 libdrm-dev libxkbcommon-dev libgbm-dev libasound-dev fonts-noto-cjk-extra && apt-get clean
+    - name: Install dependencies
+      run: yarn
+    - name: Build book
+      run: yarn build
+    - uses: actions/upload-artifact@v2
+      with:
+        name: book
+        path: dist/output.pdf
