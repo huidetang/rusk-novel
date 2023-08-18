@@ -61,16 +61,23 @@ ruby > rt {
 }
 
 p {
-    text-indent: 1em;
+    text-indent: 1rem;
     /* 段落先頭約物の調整、行末句読点ぶら下げあり */
     hanging-punctuation: first allow-end;
     line-height: 2rem;
 
+    &.hashira {
+        text-indent: 4rem;
+        margin-top: 2rem;
+        font-family: "Noto Sans CJK JP", sans-serif;
+    }
+
     &.togaki {
+        text-indent: 4rem;
         margin-top: 2rem;
     }
 
-    &.line {
+    &.serifu {
         text-indent: 0;
         margin-inline-start: 8em;
         margin-block-start: 0;
