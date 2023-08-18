@@ -99,7 +99,7 @@
 </p>
 
 <p class="serifu">
-    <strong>ちょっと面白い話を聞いたので、先生にお伝えしようと思って、ね。</strong>
+    <strong>竜神様</strong>ちょっと面白い話を聞いたので、先生にお伝えしようと思って、ね。
 </p>
 
 <p class="serifu">
