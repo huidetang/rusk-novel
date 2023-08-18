@@ -1,18 +1,111 @@
-@import "../book/themes/packages/@vivliostyle/theme-bunko/scss/theme_print.scss";
-
 @page {
+    size: 148mm 210mm;
+    width: 360pt;
+    height: 468pt;
+    margin: auto;
+    font-size: 8.5pt;
     font-family: "Noto Serif CJK JP", serif;
-    p.line {
-        margin-inline-start: 6em;
+}
+
+@page:left {
+    @top-left {
+        content: counter(page);
+        margin-left: 7pt;
+        margin-top: 8.5mm;
+        writing-mode: horizontal-tb;
+    }
+}
+
+@page:right {
+    @top-right {
+        content: counter(page);
+        margin-right: 7pt;
+        margin-top: 8.5mm;
+        writing-mode: horizontal-tb;
+    }
+}
+
+html {
+    writing-mode: vertical-rl;
+    font-family: "Noto Serif CJK JP", serif;
+    orphans: 1;
+    widows: 1;
+    text-align: justify;
+    text-spacing: space-first allow-end ideograph-alpha ideograph-numeric;
+    line-height: 2;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.35rem;
+    break-after: avoid;
+    line-height: 6rem;
+    letter-spacing: 0.125em;
+}
+  
+h2 {
+    font-weight: normal;
+    font-size: 1.18rem;
+    text-indent: 3rem;
+    break-after: avoid;
+    line-height: 4rem;
+}
+
+ruby > rt {
+    font-size: 0.5rem;
+}
+
+p {
+    text-indent: 1em;
+    /* 段落先頭約物の調整、行末句読点ぶら下げあり */
+    hanging-punctuation: first allow-end;
+
+    &.line {
+        text-indent: 0;
+        margin-inline-start: 8em;
         margin-block-start: 0;
         margin-block-end: 0;
+
+        strong:first-child {
+            margin-inline-start: -8em;
+            min-inline-size: 8em;
+            display: inline-block;
+        }
     }
-    p.line > strong:first-child {
-        margin-inline-start: -6em;
-        min-inline-size: 6em;
-        display: inline-block;
-    }
-    .text-combine {
-        text-combine-upright: all;
-    }
+}
+
+/* 奥付 */
+[role='doc-colophon'] {
+    font-size: 0.824rem;
+    line-height: 1.5rem;
+    margin-block-start: 6rem;
+    break-inside: avoid;
+}
+
+/* 縦中横 */
+.tcy {
+    text-combine-upright: all;
+}
+
+.upright {
+    text-orientation: upright;
+}
+
+/* 圏点（ゴマ） */
+em.sesame_dot {
+    font-style: normal;
+    text-emphasis-style: sesame;
+}
+
+/* 著者 */
+.author {
+    text-align: end;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.125em;
 }

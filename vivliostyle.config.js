@@ -7,7 +7,7 @@ module.exports = {
   theme: 'dist/styles/theme_print.css',
   entry: [
     'novel.md', 
-    'scrnario.md',
+    'scenario.md',
     "colophon.md",
     // `title` is automatically guessed from the file (frontmatter > first heading).
     // {

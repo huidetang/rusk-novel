@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "author": "るいざ・しゃーろっと <louisa.vrc@gmail.com>",
   "scripts": {
-    "build:css": "pnpm run sass user_scss/:dist/styles",
+    "build:css": "sass user_scss/:dist/styles",
     "build": "pnpm run build:css && vivliostyle build --no-sandbox --preflight press-ready-local --preflight-option gray-scale",
     "preview": "vivliostyle preview"
   },
@@ -17,8 +17,9 @@
   },
   "dependencies": {
     "@vivliostyle/cli": "latest",
+    "@vivliostyle/theme-bunko": "latest",
     "npm-run-all": "latest",
-    "sass": "latest"
+    "sass": "^1.66.0"
   },
   "license": "CC-BY-3.0",
   "private": true
