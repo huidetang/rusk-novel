@@ -10,7 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: docker build . --file Dockerfile --tag my-image
-    - run: docker run --rm -v $(pwd):/app my-image npm install
     - run: docker run --rm -v $(pwd):/app my-image npm run build
     - uses: actions/upload-artifact@v2
       with:
