@@ -67,13 +67,15 @@ p {
     line-height: 2rem;
 
     &.hashira {
-        text-indent: 4rem;
+        text-indent: 1rem;
+        margin-left: 4rem;
         margin-top: 2rem;
         font-family: "Noto Sans CJK JP", sans-serif;
     }
 
     &.togaki {
-        text-indent: 4rem;
+        text-indent: 1rem;
+        margin-left: 4rem;
         margin-top: 2rem;
     }
 
