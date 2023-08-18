@@ -68,15 +68,17 @@ p {
 
     &.hashira {
         text-indent: 1rem;
-        margin-left: 4rem;
-        margin-top: 2rem;
+        margin-inline-start: 4rem;
+        margin-block-start: 1rem;
+        margin-block-end: 1rem;
         font-family: "Noto Sans CJK JP", sans-serif;
     }
 
     &.togaki {
         text-indent: 1rem;
-        margin-left: 4rem;
-        margin-top: 2rem;
+        margin-inline-start: 4rem;
+        margin-block-start: 1rem;
+        margin-block-end: 1rem;
     }
 
     &.serifu {
