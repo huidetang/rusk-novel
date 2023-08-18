@@ -64,7 +64,11 @@ p {
     text-indent: 1em;
     /* 段落先頭約物の調整、行末句読点ぶら下げあり */
     hanging-punctuation: first allow-end;
-    line-height: 4rem;
+    line-height: 2rem;
+
+    &.togaki {
+        margin-top: 2rem;
+    }
 
     &.line {
         text-indent: 0;
