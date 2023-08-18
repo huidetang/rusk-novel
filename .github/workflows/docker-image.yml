@@ -15,4 +15,4 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: book
-        path: book/dist/output.pdf
+        path: dist/output.pdf
