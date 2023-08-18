@@ -32,7 +32,7 @@ html {
     widows: 1;
     text-align: justify;
     text-spacing: space-first allow-end ideograph-alpha ideograph-numeric;
-    line-height: 2;
+    line-height: 2rem;
 }
   
 * {
@@ -64,12 +64,14 @@ p {
     text-indent: 1em;
     /* 段落先頭約物の調整、行末句読点ぶら下げあり */
     hanging-punctuation: first allow-end;
+    line-height: 4rem;
 
     &.line {
         text-indent: 0;
         margin-inline-start: 8em;
         margin-block-start: 0;
         margin-block-end: 0;
+        line-height: 2rem;
 
         strong:first-child {
             margin-inline-start: -8em;
