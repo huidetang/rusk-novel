@@ -5,7 +5,7 @@
   "author": "るいざ・しゃーろっと <louisa.vrc@gmail.com>",
   "scripts": {
     "build:css": "sass user_scss/:dist/styles",
-    "build": "pnpm run build:css && vivliostyle build --no-sandbox --preflight press-ready-local --preflight-option gray-scale",
+    "build": "yarn build:css && vivliostyle build --no-sandbox --preflight press-ready-local --preflight-option gray-scale",
     "preview": "vivliostyle preview"
   },
   "devDependencies": {
